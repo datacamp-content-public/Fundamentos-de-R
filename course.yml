@@ -1,4 +1,4 @@
-title: Fundamentos de R
-description: Aprenda R de uma vez por todas, entendendo como manipular e tratar dados dentro dessa popular linguagem de computação estatística.
+title: R para Ciência de Dados
+description: Aprenda R de uma vez por todas, entendendo como manipular e tratar dados dentro dessa popular linguagem de computação estatística. Saindo do zero você será capaz de se aprofundar no mundo da Ciência de Dados usando o R.
 programming_language: r
 from: 'r-base-prod:v1.0.0'
