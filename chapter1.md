@@ -64,3 +64,39 @@ The instructions that follow should be in bullet point form with clear guidance 
 success_msg("Some praise! Then reinforce a learning objective from the exercise.")
 ```
 
+
+---
+## <<<New Exercise>>>
+
+```yaml
+type: NormalExercise
+key: ea55f984b3
+lang: r
+xp: 100
+skills: 1
+```
+
+
+`@instructions`
+
+`@hint`
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+
+```
+
+`@solution`
+```{r}
+
+```
+
+`@sct`
+```{r}
+
+```
