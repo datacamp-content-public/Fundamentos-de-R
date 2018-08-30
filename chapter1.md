@@ -31,8 +31,7 @@ Adicione uma linha em R que calcule 6 + 12, exatamente igual ao código de exemp
 `@pre_exercise_code`
 
 ```{r}
-install.packages('dplyr')
-library(dplyr)
+
 ```
 
 
@@ -61,7 +60,6 @@ library(dplyr)
 `@sct`
 
 ```{r}
-source("http://bit.ly/carregaR")
 test_output_contains("18", incorrect_msg = "Tenha certeza que você inseriu uma nova linha que some 6 + 12. Não inicie esta linha com um `#`, senão o código não será executado!")
 success_msg("Parabéns! Veja como o console mostra você o resultado do seu código. Agora, já que você está familiarizado com a interface do curso, vamos aprender R!")
 ```
