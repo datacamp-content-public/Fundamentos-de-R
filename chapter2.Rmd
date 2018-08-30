@@ -1,50 +1,74 @@
 ---
-title_meta  : Capítulo 2
-title       : Vetores
-description : "Neste curso gratuito de R, nós iremos fazer uma viagem a Las Vegas, onde você irá analizar seus resultados nos jogos usando vetores! Depois de completar este capítulo, você será capaz de criar vetores em R, nomeá-los,selecionar elementos dele e compará-lo com diferentes vetores. Vamos nessa!"
+title_meta: 'Capítulo 2'
+title: Vetores
+description: 'Neste curso gratuito de R, nós iremos fazer uma viagem a Las Vegas, onde você irá analizar seus resultados nos jogos usando vetores! Depois de completar este capítulo, você será capaz de criar vetores em R, nomeá-los,selecionar elementos dele e compará-lo com diferentes vetores. Vamos nessa!'
+---
 
---- type:NormalExercise xp:100 skills:1 key:d9b453dbdd
 ## Criando um vetor
+
+```yaml
+type: NormalExercise 
+xp: 100 
+skills: 1
+key: d9b453dbdd   
+```
+
 
 Está com sorte hoje? É melhor que esteja, pois esse capítulo levará você para uma viagem a Cidade do Pecado, também conhecida como *Paraíso dos Estatísticos*!
 
 Graças ao R e suas novas habilidades de análise de dados, você irá aprender como melhorar sua performance e alavancar sua carreira como profissional em jogos de azar. Este capítulo vai mostrar como você pode facilmente acompanhar seu progresso de apostas e como fazer algumas análises de suas ações passadas. Próxima parada: Vegas, baby... VEGAS!!
 
-*** =instructions
+
+`@instructions`
 - Você ainda se lembra do que aprendeu no primeiro capítulo? Então, declare a variável `vegas` e defina `"Go!"` como seu valor. Lembre-se de colocar as aspas e não se esqueça que R é case sensitive, ou seja, diferencia maiúsculas e minúsculas.
 
-*** =hint
+`@hint`
 Simplesmente digite a seguinte linha no editor:
 ```
 vegas <- "Go!"
 ```
 
-*** =pre_exercise_code
+`@pre_exercise_code`
+
 ```{r}
 # no pec
 ```
 
-*** =sample_code
+
+`@sample_code`
+
 ```{r}
 # Declare a variável vegas
 vegas <-
 ```
 
-*** =solution
+
+`@solution`
+
 ```{r}
 # Declare a variável vegas
 vegas <- "Go!"
 ```
 
-*** =sct
+
+`@sct`
+
 ```{r}
 test_object("vegas", incorrect_msg = "Voc&#234; declarou corretamente a vari&#225;vel `vegas`? N&#227;o se esque&#231;a que R &#233; case sensitive!")
 success_msg("&#211;timo! Vamos para o pr&#243;ximo exerc&#237;cio.")
 ```
 
 
---- type:NormalExercise xp:100 skills:1 key:fd427db76f
+---
+
 ## Criando um vetor (2)
+
+```yaml
+type: NormalExercise 
+xp: 100 
+skills: 1
+key: fd427db76f   
+```
 
 
 Certo, vamos nos focar!
@@ -60,18 +84,22 @@ character_vector <- c("a", "b", "c")
 
 Uma vez criados esses vetores em R, você pode realizar cálculos neles.
 
-*** =instructions
+
+`@instructions`
 Complete o código para que `boolean_vector` contenha três elementos: `TRUE`, `FALSE` e `TRUE` (nesta ordem).
 
-*** =hint
+`@hint`
 Armazene `c(TRUE, FALSE, TRUE)` na variável `boolean_vector` com o operador `<-`.
 
-*** =pre_exercise_code
+`@pre_exercise_code`
+
 ```{r}
 # no pec
 ```
 
-*** =sample_code
+
+`@sample_code`
+
 ```{r}
 numeric_vector <- c(1, 10, 49)
 character_vector <- c("a", "b", "c")
@@ -80,7 +108,9 @@ character_vector <- c("a", "b", "c")
 boolean_vector <-
 ```
 
-*** =solution
+
+`@solution`
+
 ```{r}
 numeric_vector <- c(1, 10, 49)
 character_vector <- c("a", "b", "c")
@@ -89,7 +119,9 @@ character_vector <- c("a", "b", "c")
 boolean_vector <- c(TRUE, FALSE, TRUE)
 ```
 
-*** =sct
+
+`@sct`
+
 ```{r}
 msg <- "N&#227;o altere o c&#243;digo que declara as vari&#225;veis `numeric_vector` e `character_vector`!"
 test_object("numeric_vector", undefined_msg = msg, incorrect_msg = msg)
@@ -100,8 +132,17 @@ success_msg("Perfeito! Perceba que adicionando espa&#231;os entre as v&#237;rgul
 ```
 
 
---- type:NormalExercise xp:100 skills:1 key:9f41229dbc
+---
+
 ## Criando um vetor (3)
+
+```yaml
+type: NormalExercise 
+xp: 100 
+skills: 1
+key: 9f41229dbc   
+```
+
 
 Depois de uma semana em Las Vegas e nenhuma Ferrari na sua garagem, você decide que é hora de usar seus super poderes de análise de dados.
 
@@ -125,22 +166,26 @@ No vetor `roulette_vector`:
 
 Você jogou apenas Poker e roleta no cassino. Para ser capaz de usar estes dados em R, você quis criar as variáveis `poker_vector` e `roulette_vector`.
 
-*** =instructions
+
+`@instructions`
 Armazene os valores que você ganhou e perdeu na roleta na variável `roulette_vector`.
 
-*** =hint
+`@hint`
 Para te ajudar nessa etapa, nós criamos o código que armazena os ganhos e perdas de Poker na variável `poker_vector`. Dê uma olhada no editor. Atribua o valor correto a variável `roulette_vector`, baseado nos números da descrição do exercício. Não se esqueça que as suas perdas são números negativos.
 
-*** =sample_code
+`@sample_code`
+
 ```{r}
 # Vitórias e derrotas no Poker de segunda a sexta
 poker_vector <- c(140, -50, 20, -120, 240)
 
 # Vitórias e derrotas na Roleta de segunda a sexta
-roulette_vector <-  
+roulette_vector <-
 ```
 
-*** =solution
+
+`@solution`
+
 ```{r}
 # Vitórias e derrotas no Poker de segunda a sexta
 poker_vector <- c(140, -50, 20, -120, 240)
@@ -149,7 +194,9 @@ poker_vector <- c(140, -50, 20, -120, 240)
 roulette_vector <- c(-24, -50, 100, -350, 10)
 ```
 
-*** =sct
+
+`@sct`
+
 ```{r}
 test_object("poker_vector",
             incorrect_msg = "Voc&#234; atribuiu o valor correto a vari&#225;vel `poker_vector`?")
@@ -159,8 +206,17 @@ success_msg("Muito bem! Para ver o conte&#250;do dos vetores, tudo que voc&#234;
 ```
 
 
---- type:NormalExercise xp:100 skills:1 key:3b0b80b192
+---
+
 ## Dando um nome ao vetor
+
+```yaml
+type: NormalExercise 
+xp: 100 
+skills: 1
+key: 3b0b80b192   
+```
+
 
 Como um analista de dados, é importante ter uma visão clara dos dados que você está usando. Entender o que cada elemento significa é essencial.
 
@@ -180,13 +236,15 @@ Neste código, primeiro nós criamos um vetor chamado `some_vector` com dois val
     "John Doe" "poker player"
 ```
 
-*** =instructions
+
+`@instructions`
 - O código a direita nomeia os elementos no vetor `poker_vector` com os dias da semana. Adicione um código para fazer o mesmo com o vetor `roulette_vector`.
 
-*** =hint
+`@hint`
 Você pode usar `names(roulette_vector)` para definir os nomes da variável `roulette_vector`. Tenha certeza de usar os nomes dos dias da semana ao nomear o vetor. Não se esqueça que R é case sensitive!
 
-*** =sample_code
+`@sample_code`
+
 ```{r}
 # Vitórias de Poker de Segunda-feira a Sexta-feira
 poker_vector <- c(140, -50, 20, -120, 240)
@@ -200,7 +258,9 @@ names(poker_vector) <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
 # Nomeando os elementos do vetor roulette_vector com dias da semana
 ```
 
-*** =solution
+
+`@solution`
+
 ```{r}
 # Vitórias de Poker de Segunda-feira a Sexta-feira
 poker_vector <- c(140, -50, 20, -120, 240)
@@ -215,7 +275,9 @@ names(poker_vector) <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
 names(roulette_vector) <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
 ```
 
-*** =sct
+
+`@sct`
+
 ```{r}
 test_object("poker_vector",
             incorrect_msg = "N&#227;o altere os valores dentro da vari&#225;vel `poker_vector`; eles j&#225; foram inseridos para voc&#234;.")
@@ -231,8 +293,17 @@ success_msg("Muito bem! Continue para o pr&#243;ximo exerc&#237;cio.")
 ```
 
 
---- type:NormalExercise xp:100 skills:1 key:6858c65a4a
+---
+
 ## Dando um nome ao vetor (2)
+
+```yaml
+type: NormalExercise 
+xp: 100 
+skills: 1
+key: 6858c65a4a   
+```
+
 
 Se você quer ser um bom estatístico, você precisa ser preguiçoso. (Se você já é preguiçoso, você tem um talento nato para ser um excepcional estatístico.)
 
@@ -240,19 +311,23 @@ No exercício anterior, você provavelmente percebeu que é chato e frustrante d
 
 Assim como você fez com suas jogatinas de Poker e Roleta, você também pode criar uma variável que contenha os dias da semana. Desta forma você poderá usar e reutilizar seu código.
 
-*** =instructions
+
+`@instructions`
 - A variável `days_vector` (que contém os dias da semana) já foi criada para você.
 - Use `days_vector` para definir os nomes de `poker_vector` e `roulette_vector`.
 
-*** =hint
+`@hint`
 Você pode usar o código `names(poker_vector) <- days_vector` para definir os nomes dos elementos em `poker_vector`. Faça a mesma coisa em `roulette_vector`.
 
-*** =pre_exercise_code
+`@pre_exercise_code`
+
 ```{r}
 # no pec
 ```
 
-*** =sample_code
+
+`@sample_code`
+
 ```{r}
 # Vitórias de Poker de Segunda-feira a Sexta-feira
 poker_vector <- c(140, -50, 20, -120, 240)
@@ -268,7 +343,9 @@ names(poker_vector) <-
 names(roulette_vector) <-
 ```
 
-*** =solution
+
+`@solution`
+
 ```{r}
 # Vitórias de Poker de Segunda-feira a Sexta-feira
 poker_vector <- c(140, -50, 20, -120, 240)
@@ -284,7 +361,9 @@ names(poker_vector) <- days_vector
 names(roulette_vector) <- days_vector
 ```
 
-*** =sct
+
+`@sct`
+
 ```{r}
 msg <- "N&#227;o altere os valores predefinidos nas vari&#225;veis `poker_vector`, `roulette_vector` ou `days_vector`."
 test_object("poker_vector", undefined_msg = msg, incorrect_msg = msg)
@@ -301,8 +380,18 @@ success_msg("Boa! Um conselho: evite duplicar c&#243;digos em qualquer situa&#23
 ```
 
 
---- type:NormalExercise xp:100 skills:1 key:da995f099f
+---
+
 ## Calculando total de vitórias
+
+```yaml
+type: NormalExercise 
+xp: 100 
+skills: 1
+key: da995f099f   
+```
+
+
 Agora que você tem as vitórias de Poker e Roleta muito bem nomeadas nos vetores, você pode começar a fazer algumas mágicas com dados.
 
 Você vai querer encontrar os seguintes tipos de informação:
@@ -328,19 +417,23 @@ b <- c(4, 5, 6)
 c <- a + b
 ```
 
-*** =instructions
+
+`@instructions`
 - Faça a soma das variáveis `A_vector` e `B_vector` e armazene o total em `total_vector`.
 - Inspecione o resultado exibindo o valor de `total_vector`.
 
-*** =hint
+`@hint`
 Use o operador `+` para somar `A_vector` e `B_vector`. Use `<-` para armazenar o resultado em `total_vector`.
 
-*** =pre_exercise_code
+`@pre_exercise_code`
+
 ```{r}
 # no pec
 ```
 
-*** =sample_code
+
+`@sample_code`
+
 ```{r}
 A_vector <- c(1, 2, 3)
 B_vector <- c(4, 5, 6)
@@ -349,10 +442,11 @@ B_vector <- c(4, 5, 6)
 total_vector <-
 
 # Exiba total_vector
-
 ```
 
-*** =solution
+
+`@solution`
+
 ```{r}
 A_vector <- c(1, 2, 3)
 B_vector <- c(4, 5, 6)
@@ -364,7 +458,9 @@ total_vector <- A_vector + B_vector
 total_vector
 ```
 
-*** =sct
+
+`@sct`
+
 ```{r}
 msg <- "N&#227;o altere o conte&#250;do de `A_vector` ou `B_vector`!"
 test_object("A_vector", undefined_msg = msg, incorrect_msg = msg)
@@ -375,25 +471,38 @@ success_msg("Bom trabalho! Continue para o pr&#243;ximo exerc&#237;cio.")
 ```
 
 
---- type:NormalExercise xp:100 skills:1 key:2969d8ed65
+---
+
 ## Calculando total de vitórias (2)
+
+```yaml
+type: NormalExercise 
+xp: 100 
+skills: 1
+key: 2969d8ed65   
+```
+
 
 Agora que você entende como R faz operações aritméticas com vetores, é hora de termos algumas Ferraris na garagem! Primeiro, você precisa entender qual foi o total de lucros e perdas por dia na semana. O lucro total diário é a soma dos lucros e perdas que você teve no Poker por dia, e os lucros e perdas que você teve por dia na Roleta.
 
 Em R, isso nada mais é que a soma de `roulette_vector` e `poker_vector`.
 
-*** =instructions
+
+`@instructions`
 Armazene na variável `total_daily` o total de quanto você ganhou e perdeu por dia (combinando Poker e Roleta).
 
-*** =hint
+`@hint`
 Igual ao exercício anterior, apenas armazene a soma dos dois vetores na variável `total_daily`.
 
-*** =pre_exercise_code
+`@pre_exercise_code`
+
 ```{r}
 # no pec
 ```
 
-*** =sample_code
+
+`@sample_code`
+
 ```{r}
 # Vitórias no Poker e Roleta de segunda a sexta:
 poker_vector <- c(140, -50, 20, -120, 240)
@@ -406,7 +515,9 @@ names(roulette_vector) <- days_vector
 total_daily <-
 ```
 
-*** =solution
+
+`@solution`
+
 ```{r}
 # Vitórias no Poker e Roleta de segunda a sexta:
 poker_vector <- c(140, -50, 20, -120, 240)
@@ -419,7 +530,9 @@ names(roulette_vector) <- days_vector
 total_daily <- poker_vector + roulette_vector
 ```
 
-*** =sct
+
+`@sct`
+
 ```{r}
 msg = "N&#227;o altere nada na declara&#231;&#227;o das vari&#225;veis `poker_vector` e `roulette_vector`."
 test_object("days_vector", undefined_msg = msg, incorrect_msg = msg)
@@ -432,8 +545,17 @@ success_msg("Excelente! Continue para o pr&#243;ximo exerc&#237;cio.")
 ```
 
 
---- type:NormalExercise xp:100 skills:1 key:e66a56b9f0
+---
+
 ## Calculando total de vitórias (3)
+
+```yaml
+type: NormalExercise 
+xp: 100 
+skills: 1
+key: e66a56b9f0   
+```
+
 
 Baseado na análise anterior, parece que você tem uma mistura de bons e maus dias. Isso não era o que seu ego esperava, e você se pergunta se teve alguma chance de você ter perdido mais dinheiro do que ganho durante a semana.
 
@@ -443,20 +565,24 @@ Uma função que pode responder a esta pergunta é [`sum()`](http://www.rdocumen
 total_poker <- sum(poker_vector)
 ```
 
-*** =instructions
+
+`@instructions`
 - Calcule o total de dinheiro que você perdeu e ganhou na Roleta e armazene seu valor na variável `total_roulette`.
 - Agora que você tem os totais da Roleta e do Poker, você pode facilmente calcular `total_week` (que é a soma de todos os ganhos e perdas da semana).
 - Exiba o valor de `total_week` .
 
-*** =hint
+`@hint`
 Use a função [`sum()`](http://www.rdocumentation.org/packages/base/functions/sum) para ter o total de `roulette_vector`. `total_week` nada mais é do que a soma de `roulette_vector` e `poker_vector`.
 
-*** =pre_exercise_code
+`@pre_exercise_code`
+
 ```{r}
 # no pec
 ```
 
-*** =sample_code
+
+`@sample_code`
+
 ```{r}
 # Vitórias no Poker e Roleta de segunda a sexta:
 poker_vector <- c(140, -50, 20, -120, 240)
@@ -475,10 +601,11 @@ total_roulette <-
 total_week <-
 
 # Exiba o valor de total_week
-
 ```
 
-*** =solution
+
+`@solution`
+
 ```{r}
 # Vitórias no Poker e Roleta de segunda a sexta:
 poker_vector <- c(140, -50, 20, -120, 240)
@@ -500,7 +627,9 @@ total_week <- total_roulette + total_poker
 total_week
 ```
 
-*** =sct
+
+`@sct`
+
 ```{r}
 msg = "N&#227;o altere nada na declara&#231;&#227;o das vari&#225;veis `poker_vector` e `roulette_vector`."
 test_object("days_vector", undefined_msg = msg, incorrect_msg = msg)
@@ -518,27 +647,40 @@ success_msg("Bom trabalho! Mas, sinto que tenho m&#225;s not&#237;cias...")
 ```
 
 
---- type:NormalExercise xp:100 skills:1 key:f532f5332d
+---
+
 ## Comparando total de vitórias
+
+```yaml
+type: NormalExercise 
+xp: 100 
+skills: 1
+key: f532f5332d   
+```
+
 
 Ops, parece que você está perdendo dinheiro. É hora de repensar e adaptar sua estratégia. Isso requer uma análise mais profunda...
 
 Após uma breve reflexão na jacuzzi do seu hotel, você percebeu que uma possível explicação poderia ser atribuida ao fato de que suas habilidades na Roleta não são tão boas quanto no Poker. Então, talvez os seus ganhos no Poker tenham sido maiores (ou `>`) que na Roleta.
 
-*** =instructions
+
+`@instructions`
 - Assim como no exercício anterior, calcule `total_poker` e `total_roulette`. Você precisará usar a função `sum()` duas vezes.
 - Compare e verifique se o total de ganhos no Poker é maior que na Roleta. Simplesmente exiba os valores dessa comparação usando o operador `>`. O que você conclui: você deve focar no Poker ou na Roleta?
 
-*** =hint
+`@hint`
 - Você já resolveu metade dessa questão no exercício anterior!
 - Para saber se 6 é maior que 5, digite `6 > 5`. A mensagem de retorno terá um valor lógico (`TRUE` ou `FALSE`).
 
-*** =pre_exercise_code
+`@pre_exercise_code`
+
 ```{r}
 # no pec
 ```
 
-*** =sample_code
+
+`@sample_code`
+
 ```{r}
 # Vitórias no Poker e Roleta de segunda a sexta:
 poker_vector <- c(140, -50, 20, -120, 240)
@@ -552,10 +694,11 @@ total_poker <-
 total_roulette <-
 
 # Compare e verifique se você teve um total maior no Poker que na Roleta
-
 ```
 
-*** =solution
+
+`@solution`
+
 ```{r}
 # Vitórias no Poker e Roleta de segunda a sexta:
 poker_vector <- c(140, -50, 20, -120, 240)
@@ -572,7 +715,9 @@ total_roulette <- sum(roulette_vector)
 total_poker > total_roulette
 ```
 
-*** =sct
+
+`@sct`
+
 ```{r}
 msg <- "N&#227;o altere nada na declara&#231;&#227;o das vari&#225;veis `poker_vector` e `roulette_vector`."
 test_object("days_vector", undefined_msg = msg, incorrect_msg = msg)
@@ -589,8 +734,17 @@ success_msg("Bom trabalho! Continue para o pr&#243;ximo exerc&#237;cio.")
 ```
 
 
---- type:NormalExercise xp:100 skills:1 key:8d78be44e9
+---
+
 ## Selecionando vetores: os bons tempos
+
+```yaml
+type: NormalExercise 
+xp: 100 
+skills: 1
+key: 8d78be44e9   
+```
+
 
 Seu palpite pareceu estar certo. Parece que Poker é mais sua praia do que Roleta.
 
@@ -598,18 +752,22 @@ Outra possível rota para investigação é sua performance no começo da semana
 
 Para responder a essa questão, você só precisa focar na seleção de `total_vector`. Em outras palavras, nosso objetivo é selecionar elementos específicos do vetor. Para selecionar um elemento de um vetor (e mais tarde matrizes, data frames, etc...), você deve usar colchetes. Entre os colchetes você deve indicar quais elementos quer selecionar. Por exemplo, para selecionar o primeiro elemento do vetor, você deve digitar `poker_vector[1]`. Para selecionar o segundo elemento, basta digitar `poker_vector[2]`, e por aí vai. Note que o primeiro elemento do vetor tem index 1, não 0 como a grande maioria das linguagens de programação.
 
-*** =instructions
+
+`@instructions`
 Armazene os resutados de Poker da quarta-feira na variável `poker_wednesday`.
 
-*** =hint
+`@hint`
 Quarta-feira é o terceiro elemento do vector `poker_vector`, o qual pode ser selecionado com `poker_vector[3]`.
 
-*** =pre_exercise_code
+`@pre_exercise_code`
+
 ```{r}
 # no pec
 ```
 
-*** =sample_code
+
+`@sample_code`
+
 ```{r}
 # Vitórias de Poker e Roleta de segunda-feira a sexta-feira:
 poker_vector <- c(140, -50, 20, -120, 240)
@@ -622,7 +780,9 @@ names(roulette_vector) <- days_vector
 poker_wednesday <-
 ```
 
-*** =solution
+
+`@solution`
+
 ```{r}
 # Vitórias de Poker e Roleta de segunda-feira a sexta-feira:
 poker_vector <- c(140, -50, 20, -120, 240)
@@ -635,7 +795,9 @@ names(roulette_vector) <- days_vector
 poker_wednesday <- poker_vector[3]
 ```
 
-*** =sct
+
+`@sct`
+
 ```{r}
 msg = "N&#227;o altere nada na declara&#231;&#227;o das vari&#225;veis `poker_vector` e `roulette_vector`."
 test_object("days_vector", undefined_msg = msg, incorrect_msg = msg)
@@ -648,8 +810,17 @@ success_msg("Excelente! R tamb&#233;m permite a sele&#231;&#227;o de m&#250;ltip
 ```
 
 
---- type:NormalExercise xp:100 skills:1 key:1351521670
+---
+
 ## Selecionando vetores: os bons tempos (2)
+
+```yaml
+type: NormalExercise 
+xp: 100 
+skills: 1
+key: 1351521670   
+```
+
 
 Que tal analisar os seus resultados do meio da semana?
 
@@ -659,18 +830,22 @@ Para selecionar múltiplos elementos de um vetor, você pode adicionar colchetes
 poker_vector[c(1, 5)]
 ```
 
-*** =instructions
+
+`@instructions`
 Armazene os resultados do Poker de terça-feira, quarta-feira e quinta-feira na variável `poker_midweek`.
 
-*** =hint
+`@hint`
 Use o vetor `c(2, 3, 4)` entre os colchetes para selecionar os elementos corretos de `poker_vector`.
 
-*** =pre_exercise_code
+`@pre_exercise_code`
+
 ```{r}
 # no pec
 ```
 
-*** =sample_code
+
+`@sample_code`
+
 ```{r}
 # Vitórias de Poker e Roleta de segunda-feira a sexta-feira:
 poker_vector <- c(140, -50, 20, -120, 240)
@@ -683,7 +858,9 @@ names(roulette_vector) <- days_vector
 poker_midweek <-
 ```
 
-*** =solution
+
+`@solution`
+
 ```{r}
 # Vitórias de Poker e Roleta de segunda-feira a sexta-feira:
 poker_vector <- c(140, -50, 20, -120, 240)
@@ -696,7 +873,9 @@ names(roulette_vector) <- days_vector
 poker_midweek <- poker_vector[c(2, 3, 4)]
 ```
 
-*** =sct
+
+`@sct`
+
 ```{r}
 msg = "N&#227;o altere nada na declara&#231;&#227;o das vari&#225;veis `poker_vector` e `roulette_vector`."
 test_object("days_vector", undefined_msg = msg, incorrect_msg = msg)
@@ -708,20 +887,31 @@ success_msg("Muito bem! Continue para o pr&#243;ximo exerc&#237;cio para se espe
 ```
 
 
---- type:NormalExercise xp:100 skills:1 key:27976b79f4
+---
+
 ## Selecionando vetores: os bons tempos (3)
+
+```yaml
+type: NormalExercise 
+xp: 100 
+skills: 1
+key: 27976b79f4   
+```
+
 
 Eu sei, selecionar múltiplos elementos de `poker_vector` usando `c(2, 3, 4)` não é nada conveniente. Muitos estatísticos são pessoas preguiçosas por natureza, então eles criaram uma forma muito mais fácil de fazer isso: `c(2, 3, 4)` pode ser abreviado usando apenas `2:4`, o que irá gerar um vetor com todos os números naturais de 2 a 4.
 
 Então, outra forma de achar os resultados do meio da semana é `poker_vector[2;4]`. Note que o vetor `2:4` é colocado entre os colchetes para selecionar os elementos de posição 2 até a posição 4.
 
-*** =instructions
+
+`@instructions`
 Armazene em `roulette_selection_vector` os resultados da Roleta de terça-feira a sexta-feira; faça uso de `:` se achar que é melhor para você.
 
-*** =hint
+`@hint`
 Armazene a seleção de `roulette_vector` em `roulette_selection_vector` colocando `2:5` entre colchetes.
 
-*** =sample_code
+`@sample_code`
+
 ```{r}
 # Vitórias de Poker e Roleta de segunda-feira a sexta-feira:
 poker_vector <- c(140, -50, 20, -120, 240)
@@ -734,7 +924,9 @@ names(roulette_vector) <- days_vector
 roulette_selection_vector <-
 ```
 
-*** =solution
+
+`@solution`
+
 ```{r}
 # Vitórias de Poker e Roleta de segunda-feira a sexta-feira:
 poker_vector <- c(140, -50, 20, -120, 240)
@@ -747,7 +939,8 @@ names(roulette_vector) <- days_vector
 roulette_selection_vector <- roulette_vector[2:5]
 ```
 
-*** =sct
+
+`@sct`
 
 ```{r}
 msg = "N&#227;o altere nada na declara&#231;&#227;o das vari&#225;veis `poker_vector` e `roulette_vector`."
@@ -761,8 +954,17 @@ success_msg("Incr&#237;vel! O caracter de dois pontos &#233; extremamente &#250;
 ```
 
 
---- type:NormalExercise xp:100 skills:1 key:e6c263ddee
+---
+
 ## Selecionando vetores: os bons tempos (4)
+
+```yaml
+type: NormalExercise 
+xp: 100 
+skills: 1
+key: e6c263ddee   
+```
+
 
 Outra forma de executar o exercício anterior é utilizando o nome dos elementos do vetor (Monday, Tuesday, ...) ao invés da posição númerica deles. Por exemplo,
 
@@ -778,20 +980,24 @@ Assim como você fez anteriormente com valores númericos, você também pode us
 poker_vector[c("Monday","Tuesday")]
 ```
 
-*** =instructions
+
+`@instructions`
 - Selecione os primeiros três elementos em `poker_vector` utilizando seus nomes: `"Monday"`, `"Tuesday"` e `"Wednesday"`. Armazene o resultado desta seleção em `poker_start`.
 - Calcule a média dos valores em `poker_start` com a função [`mean()`](http://www.rdocumentation.org/packages/base/functions/mean). Depois, simplesmente exiba o resultado para que você possa inspecioná-lo.
 
-*** =hint
+`@hint`
 - Você pode usar `c("Monday", "Tuesday", "Wednesday")` dentro de colchetes para selecionar  `poker_vector` apropriadamente.
 - Você pode usar `mean(poker_start)` para descobrir a média dos elementos em `poker_start`. Você não precisará da média de todos os elementos, só dos três primeiros dias.
 
-*** =pre_exercise_code
+`@pre_exercise_code`
+
 ```{r}
 # no pec
 ```
 
-*** =sample_code
+
+`@sample_code`
+
 ```{r}
 # Vitórias de Poker e Roleta de segunda-feira a sexta-feira:
 poker_vector <- c(140, -50, 20, -120, 240)
@@ -804,11 +1010,11 @@ names(roulette_vector) <- days_vector
 poker_start <-
 
 # Calcule a média dos elementos de poker_start
-
-
 ```
 
-*** =solution
+
+`@solution`
+
 ```{r}
 # Vitórias de Poker e Roleta de segunda-feira a sexta-feira:
 poker_vector <- c(140, -50, 20, -120, 240)
@@ -824,7 +1030,9 @@ poker_start <- poker_vector[c("Monday", "Tuesday", "Wednesday")]
 mean(poker_start)
 ```
 
-*** =sct
+
+`@sct`
+
 ```{r}
 msg = "N&#227;o altere nada na declara&#231;&#227;o das vari&#225;veis `poker_vector` e `roulette_vector`."
 test_object("days_vector", undefined_msg = msg, incorrect_msg = msg)
@@ -837,8 +1045,17 @@ success_msg("Bom trabalho! Al&#233;m de selecionar vetores pelo index ou nome, v
 ```
 
 
---- type:NormalExercise xp:100 skills:1 key:f0f619c901
+---
+
 ## Selecionando por comparação - Passo 1
+
+```yaml
+type: NormalExercise 
+xp: 100 
+skills: 1
+key: f0f619c901   
+```
+
 
 Ao fazer uso de operadores de comparação, nós podemos abordar as questões anteriores de forma mais proativa.
 
@@ -860,19 +1077,23 @@ Conforme vimos no capítulo anterior, colocar `6 > 5 ` retorna  `TRUE`. A parte 
 
 Esse comando testará cada elemento do vetor, verificando se a condição informada pelos operadores de comparação é `TRUE` ou `FALSE`.
 
-*** =instructions
+
+`@instructions`
 - Verifique quais elementos em `poker_vector` são positivos (ou seja, > 0) e armazene-os em `selection_vector`.
 - Exiba `selection_vector` para que você possa inspecioná-lo. Ao fazer isso, você será capaz de verificar se você ganhou (`TRUE`) ou perdeu (`FALSE`) dinheiro para cada dia da semana.
 
-*** =hint
+`@hint`
 Para verificar em quais dias os seus resultados no Poker são positivos, a linguagem R deve checar se cada elemento de `poker_vector` é maior que zero. `algum_vetor > 0` é uma boa dica do que você deve fazer em seguida.
 
-*** =pre_exercise_code
+`@pre_exercise_code`
+
 ```{r}
 # no pec
 ```
 
-*** =sample_code
+
+`@sample_code`
+
 ```{r}
 # Vitórias de Poker e Roleta de segunda-feira a sexta-feira:
 poker_vector <- c(140, -50, 20, -120, 240)
@@ -885,10 +1106,11 @@ names(roulette_vector) <- days_vector
 selection_vector <-
 
 # Exiba selection_vector
-
 ```
 
-*** =solution
+
+`@solution`
+
 ```{r}
 # Vitórias de Poker e Roleta de segunda-feira a sexta-feira:
 poker_vector <- c(140, -50, 20, -120, 240)
@@ -904,7 +1126,9 @@ selection_vector <- poker_vector > 0
 selection_vector
 ```
 
-*** =sct
+
+`@sct`
+
 ```{r}
 msg <- "N&#227;o altere nada na declara&#231;&#227;o das vari&#225;veis `poker_vector` e `roulette_vector`."
 test_object("days_vector", undefined_msg = msg, incorrect_msg = msg)
@@ -917,8 +1141,17 @@ success_msg("Parab&#233;ns!")
 ```
 
 
---- type:NormalExercise xp:100 skills:1 key:2754fc5cd4
+---
+
 ## Selecionando por comparação - Passo 2
+
+```yaml
+type: NormalExercise 
+xp: 100 
+skills: 1
+key: 2754fc5cd4   
+```
+
 
 Trabalhar com comparações fará sua análise dos dados mais fácil. Ao invés de selecionar um subconjunto de dias para investigar por você mesmo (como antes), você pode simplesmente pedir a linguagem R para retornar apenas os dias onde você teve um retorno positivo do Poker.
 
@@ -932,18 +1165,22 @@ poker_vector[selection_vector]
 
 R sabe o que fazer quando você passa um vetor lógico dentro dos colchetes: ele somente selecionará aqueles elementos que correspondem a `TRUE` em `selection_vector`.
 
-*** =instructions
+
+`@instructions`
 Coloque `selection_vector` entre colchetes para armazenar a quantidade de dinheiro que você ganhou nos dias bons na variável `poker_winning_days`.
 
-*** =hint
+`@hint`
 Use `poker_vector[selection_vector]` para selecionar os valores desejados de `poker_vector`, e armazene tal resultado em `poker_winning_days`.
 
-*** =pre_exercise_code
+`@pre_exercise_code`
+
 ```{r}
 # no pec
 ```
 
-*** =sample_code
+
+`@sample_code`
+
 ```{r}
 # Vitórias de Poker e Roleta de segunda-feira a sexta-feira:
 poker_vector <- c(140, -50, 20, -120, 240)
@@ -959,7 +1196,9 @@ selection_vector <- poker_vector > 0
 poker_winning_days <-
 ```
 
-*** =solution
+
+`@solution`
+
 ```{r}
 # Vitórias de Poker e Roleta de segunda-feira a sexta-feira:
 poker_vector <- c(140, -50, 20, -120, 240)
@@ -975,7 +1214,9 @@ selection_vector <- poker_vector > 0
 poker_winning_days <- poker_vector[selection_vector]
 ```
 
-*** =sct
+
+`@sct`
+
 ```{r}
 msg = "N&#227;o altere nada na declara&#231;&#227;o das vari&#225;veis `poker_vector` e `roulette_vector`."
 test_object("days_vector", undefined_msg = msg, incorrect_msg = msg)
@@ -988,24 +1229,37 @@ success_msg("Bom trabalho! Continue para o pr&#243;ximo exerc&#237;cio!")
 ```
 
 
---- type:NormalExercise xp:100 skills:1 key:59e8dcbbd5
+---
+
 ## Seleção avançada
+
+```yaml
+type: NormalExercise 
+xp: 100 
+skills: 1
+key: 59e8dcbbd5   
+```
+
 
 Assim como você fez no Poker, você também quer saber quais dias você teve um retorno positivo na Roleta.
 
-*** =instructions
+
+`@instructions`
 - Crie a variável `selection_vector`, desta vez para saber se você teve um bom rendimento na Roleta nos diferentes dias.
 - Armazene a quantidade de dinheiro que você fez nos dias que terminaram positivos na Roleta na variável `roulette_winning_days`. Esse vetor deve conter as vitórias de `roulette_vector`.
 
-*** =hint
+`@hint`
 Uma vez que você calculou `selection_vector` com sucesso, você pode usar `roulette_vector[selection_vector]` para selecionar os resultados positivos de `roulette_vector`.
 
-*** =pre_exercise_code
+`@pre_exercise_code`
+
 ```{r}
 # no pec
 ```
 
-*** =sample_code
+
+`@sample_code`
+
 ```{r}
 # Vitórias de Poker e Roleta de segunda-feira a sexta-feira:
 poker_vector <- c(140, -50, 20, -120, 240)
@@ -1021,7 +1275,9 @@ selection_vector <-
 roulette_winning_days <-
 ```
 
-*** =solution
+
+`@solution`
+
 ```{r}
 # Vitórias de Poker e Roleta de segunda-feira a sexta-feira:
 poker_vector <- c(140, -50, 20, -120, 240)
@@ -1037,7 +1293,9 @@ selection_vector <- roulette_vector > 0
 roulette_winning_days <- roulette_vector[selection_vector]
 ```
 
-*** =sct
+
+`@sct`
+
 ```{r}
 msg = "N&#227;o altere nada na declara&#231;&#227;o das vari&#225;veis `poker_vector` e `roulette_vector`."
 test_object("days_vector", undefined_msg = msg, incorrect_msg = msg)
@@ -1050,3 +1308,5 @@ test_object("roulette_winning_days",
 
 success_msg("Excelente! Esse exerc&#237;cio conclui o cap&#237;tulo de vetores. O pr&#243;ximo cap&#237;tulo ir&#225; apresentar voc&#234; a uma vers&#227;o bidimensional dos vetores: as matrizes.")
 ```
+
+

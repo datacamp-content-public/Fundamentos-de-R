@@ -1,10 +1,18 @@
---- 
-title_meta  : Capítulo 6
-title       : Listas
-description : Listas, diferentemente dos vetores, podem armazenar dados de diferentes tipos, assim como s lista de tarefas a fazer em sua casa ou no trabalho. Este capítulo vai te ensinar como criar, nomear e criar subconjunto a partir dessas listas.
+---
+title_meta: 'Capítulo 6'
+title: Listas
+description: 'Listas, diferentemente dos vetores, podem armazenar dados de diferentes tipos, assim como s lista de tarefas a fazer em sua casa ou no trabalho. Este capítulo vai te ensinar como criar, nomear e criar subconjunto a partir dessas listas.'
+---
 
---- type:NormalExercise xp:100 skills:1 key:2afcdb6a76ec91bf266de9b2ac295d844d7bb004
 ## Listas, por que você precisa delas?
+
+```yaml
+type: NormalExercise 
+xp: 100 
+skills: 1
+key: 2afcdb6a76ec91bf266de9b2ac295d844d7bb004   
+```
+
 
 Parabéns! A esta altura do curso você já está familiarizado com:
 
@@ -14,35 +22,52 @@ Parabéns! A esta altura do curso você já está familiarizado com:
 
 Nada mal para um iniciante em R, certo? ;-)
 
-*** =instructions
+
+`@instructions`
 Clique em 'Submit Answer' para começar a aprender tudo sobre listas!
 
-*** =hint
+`@hint`
 Apenas clique no botão 'Submit Answer'.
 
-*** =pre_exercise_code
+`@pre_exercise_code`
+
 ```{r}
 # no pec
 ```
 
-*** =sample_code
+
+`@sample_code`
+
 ```{r}
 # Apenas clique no botão 'Submit Answer'.
 ```
 
-*** =solution
+
+`@solution`
+
 ```{r}
 # Apenas clique no botão 'Submit Answer'.
 ```
 
-*** =sct
+
+`@sct`
+
 ```{r}
 success_msg("Vamos nessa! Continue para o pr&#243;ximo exerc&#237;cio.")
 ```
 
 
---- type:NormalExercise xp:100 skills:1 key:68f93c5c504616bd18876da52cd123277d56fc8b
+---
+
 ## Listas, por que você precisa delas? (2)
+
+```yaml
+type: NormalExercise 
+xp: 100 
+skills: 1
+key: 68f93c5c504616bd18876da52cd123277d56fc8b   
+```
+
 
 Uma  **lista** em R é semelhante a uma lista de tarefas a fazer: os diferentes itens que estão na lista provavelmente serão diferentes um dos outros em comprimento, características, tipo de atividade que deve ser feita, etc...
 
@@ -51,35 +76,52 @@ Estes objetos podem ser matrizes, vetores, data frames, e até mesmo outras list
 
 Você poderia dizer que uma lista é algum tipo de super tipo de dado: você pode armazenar praticamente qualquer pedaço de informação nela!
 
-*** =instructions
+
+`@instructions`
 Clique em 'Submit Answer' para iniciar o primeiro exercício sobre listas.
 
-*** =hint
+`@hint`
 Clique em 'Submit Answer' para iniciar o primeiro exercício sobre listas.
 
-*** =pre_exercise_code
+`@pre_exercise_code`
+
 ```{r}
 # no pec
 ```
 
-*** =sample_code
+
+`@sample_code`
+
 ```{r}
 # Clique em 'Submit Answer' para iniciar o primeiro exercício sobre listas.
 ```
 
-*** =solution
+
+`@solution`
+
 ```{r}
 # Clique em 'Submit Answer' para iniciar o primeiro exercício sobre listas.
 ```
 
-*** =sct
+
+`@sct`
+
 ```{r}
 success_msg("Boa! T&#225; na hora de sujar as m&#227;os!")
 ```
 
 
---- type:NormalExercise xp:100 skills:1 key:4beee9cb532c889903218b49b83ab5ef133eac83
+---
+
 ## Criando uma lista
+
+```yaml
+type: NormalExercise 
+xp: 100 
+skills: 1
+key: 4beee9cb532c889903218b49b83ab5ef133eac83   
+```
+
 
 Vamos criar nossa primeira lista! Para fazê-lo, você deve usar a função [`list()`](http://www.rdocumentation.org/packages/base/functions/list): 
 
@@ -89,18 +131,22 @@ my_list <- list(comp1, comp2 ...)
 
 O argumento que deve ser enviado para a função list são os componentes da lista. Lembre-se, esses componentes podem ser matrizes, vetores, outras listas, ...
 
-*** =instructions
+
+`@instructions`
 Contrua uma lista chamada `my_list`, que contenha a variável `my_vector`, `my_matrix` e `my_df` como componentes da lista.
 
-*** =hint
+`@hint`
 Use a função [`list()`](http://www.rdocumentation.org/packages/base/functions/list) com `my_vector`, `my_matrix` e `my_df` como argumentos separados por vírgulas.
 
-*** =pre_exercise_code
+`@pre_exercise_code`
+
 ```{r}
 # no pec
 ```
 
-*** =sample_code
+
+`@sample_code`
+
 ```{r}
 # Vetor com números de 1 a 10
 my_vector <- 1:10 
@@ -112,10 +158,12 @@ my_matrix <- matrix(1:9, ncol = 3)
 my_df <- mtcars[1:10,]
 
 # Construa uma lista com esses diferentes elementos:
-my_list <- 
+my_list <-
 ```
 
-*** =solution
+
+`@solution`
+
 ```{r}
 # Vetor com números de 1 a 10
 my_vector <- 1:10 
@@ -130,7 +178,9 @@ my_df <- mtcars[1:10,]
 my_list <- list(my_vector, my_matrix, my_df)
 ```
 
-*** =sct
+
+`@sct`
+
 ```{r}
 msg = "N&#227;o remova ou mude a defini&#231;&#227;o das vari&#225;veis `my_vector`, `my_matrix` ou `my_df`!"
 test_object("my_vector", undefined_msg = msg, incorrect_msg = msg)
@@ -142,8 +192,17 @@ success_msg("Maravilha! Avance para o pr&#243;ximo exerc&#237;cio.")
 ```
 
 
---- type:NormalExercise xp:100 skills:1 key:89dd0126568b1ff5a84033c571907a8a282245e4
+---
+
 ## Dando um nome a lista
+
+```yaml
+type: NormalExercise 
+xp: 100 
+skills: 1
+key: 89dd0126568b1ff5a84033c571907a8a282245e4   
+```
+
 
 Muito bem, você está com a corda toda!
 
@@ -162,23 +221,27 @@ my_list <- list(your_comp1, your_comp2)
 names(my_list) <- c("name1", "name2")
 ```
 
-*** =instructions
+
+`@instructions`
 - Altere o código do exercício anterior (veja no editor) adicionando nomes aos componentes. Coloque o nome `vec` para `my_vector`, `mat` para `my_matrix` e `df` para `my_df`.
 - Exiba `my_list` para que você possa inspecionar o resultado.
 
-*** =hint
+`@hint`
 O primeiro método de associar nomes a sua lista é a forma mais fácil. Ela começa assim:
 ```
 my_list <- list(vec = my_vector)
 ```
 Adicione os outros dois componentes de forma similar.
 
-*** =pre_exercise_code
+`@pre_exercise_code`
+
 ```{r}
 # no pec
 ```
 
-*** =sample_code
+
+`@sample_code`
+
 ```{r}
 # Vetor com números de 1 a 10
 my_vector <- 1:10 
@@ -193,10 +256,11 @@ my_df <- mtcars[1:10,]
 my_list <- list(my_vector, my_matrix, my_df)
 
 # Exiba my_list
-
 ```
 
-*** =solution
+
+`@solution`
+
 ```{r}
 # Vetor com números de 1 a 10
 my_vector <- 1:10 
@@ -214,7 +278,9 @@ my_list <- list(my_vector, my_matrix, my_df)
 my_list
 ```
 
-*** =sct
+
+`@sct`
+
 ```{r}
 msg = "N&#227;o remova ou mude a defini&#231;&#227;o das vari&#225;veis `my_vector`, `my_matrix` ou `my_df`!"
 test_object("my_vector", undefined_msg = msg, incorrect_msg = msg)
@@ -229,14 +295,24 @@ success_msg("&#211;timo! Agora, voc&#234; n&#227;o s&#243; sabe como construir l
 ```
 
 
---- type:NormalExercise xp:100 skills:1 key:19fd17cc792ef870c1558b3a9bae08c1d1e3acae
+---
+
 ## Dando um nome a lista (2)
+
+```yaml
+type: NormalExercise 
+xp: 100 
+skills: 1
+key: 19fd17cc792ef870c1558b3a9bae08c1d1e3acae   
+```
+
 
 Como um grande fã de filmes (lembre-se do seu trabalho na LucasFilms), você decidiu começar a armazenar informações de bons filmes com a ajuda das listas.
 
 Comece criando uma lista para o filme "O Iluminado" ("The Shining", em Inglês). Nós já criamos as variáveis `mov`, `act` e `rev` no seu workspace. Fique a vontade para olhá-los no console.
 
-*** =instructions
+
+`@instructions`
 Complete o código a direita para criar a `shining_list`. Ela contém três elementos:
 
 - moviename: uma linha de caracteres com o nome do filme (armazenado em `mov`)
@@ -245,10 +321,11 @@ Complete o código a direita para criar a `shining_list`. Ela contém três elem
 
 Não se esqueça de nomear os componentes da lista corretamente (os nomes são moviename, actors e reviews).
 
-*** =hint
+`@hint`
 `shining_list <- list(moviename = mov)` é apenas parte da solução; é seu trabalho adicionar também `act` e `rev` a lista, com seus apropriados nomes.
 
-*** =pre_exercise_code
+`@pre_exercise_code`
+
 ```{r}
 mov <- "The Shining"
 act      <- c("Jack Nicholson","Shelley Duvall","Danny Lloyd","Scatman Crothers","Barry Nelson")
@@ -259,7 +336,9 @@ rev     <- data.frame(scores, sources, comments)
 rm(scores, sources, comments)
 ```
 
-*** =sample_code
+
+`@sample_code`
+
 ```{r}
 # As variáveis mov, act e rev estão disponíveis
 
@@ -267,7 +346,9 @@ rm(scores, sources, comments)
 shining_list <- list(moviename = mov)
 ```
 
-*** =solution
+
+`@solution`
+
 ```{r}
 # As variáveis mov, act e rev estão disponíveis
 
@@ -275,7 +356,9 @@ shining_list <- list(moviename = mov)
 shining_list <- list(moviename = mov, actors = act, reviews = rev)
 ```
 
-*** =sct
+
+`@sct`
+
 ```{r}
 msg = "N&#227;o altere ou remova a defini&#231;&#227;o das vari&#225;veis pr&#233;-configuradas!"
 lapply(c("mov", "rev", "act"), test_object, undefined_msg = msg, incorrect_msg = msg)
@@ -287,8 +370,17 @@ success_msg("Inacredit&#225;vel! Voc&#234; sabe como criar e nomear listas agora
 ```
 
 
---- type:NormalExercise xp:100 skills:1 key:1ef3278944562caef64b9927dd2ddb6ee52334cd
+---
+
 ## Selecionando elementos de uma lista
+
+```yaml
+type: NormalExercise 
+xp: 100 
+skills: 1
+key: 1ef3278944562caef64b9927dd2ddb6ee52334cd   
+```
+
 
 Sua linda frequentemente será feita de numerosos elementos e componentes. 
 
@@ -311,20 +403,24 @@ shining_list$reviews
 
 Além de selecionar componentes, você frequentemente precisará selecionar elementos específicos destes componentes. Por exemplo, com `shining_list[[2]][1]` você selecionará do segundo componente (`shining_list[[2]]`), o primeiro elemento (`[1]`). Quando você digita isso no console, o resultado será "Jack Nicholson".
 
-*** =instructions
+
+`@instructions`
 - Selecione o vetor que representa os atores em `shining_list`. Simplesmente exiba o resultado.
 - Selecione o segundo elemento do vetor que representa os atores em `shining_list`. Exiba também o resultado.
 
-*** =hint
+`@hint`
 - Para selecionar o vetor que representa os atores, você pode usar `$actors`.
 - Para selecionar o terceiro elemento no vetor representando os atores, você usa `shining_list$actors[3]`. O que você precisa fazer para selecionar o segundo elemento?
 
-*** =pre_exercise_code
+`@pre_exercise_code`
+
 ```{r}
 load(url("http://s3.amazonaws.com/assets.datacamp.com/course/intro_to_r/shining_list.RData"))
 ```
 
-*** =sample_code
+
+`@sample_code`
+
 ```{r}
 # shining_list já está pré-carregado em seu workspace
 
@@ -332,10 +428,11 @@ load(url("http://s3.amazonaws.com/assets.datacamp.com/course/intro_to_r/shining_
 
 
 # Exiba o segundo elemento do vetor dos atores
-
 ```
 
-*** =solution
+
+`@solution`
+
 ```{r}
 # shining_list já está pré-carregado em seu workspace
 
@@ -346,7 +443,9 @@ shining_list$actors
 shining_list$actors[2]
 ```
 
-*** =sct
+
+`@sct`
+
 ```{r}
 msg <- "N&#227;o remova ou altere a defini&#231;&#227;o de `shining_list`, que j&#225; est&#225; pr&#233;-carregado no workspace!"
 test_object("shining_list", undefined_msg = msg, incorrect_msg = msg)
@@ -356,8 +455,17 @@ success_msg("&#211;timo! Selecionar elementos de listas &#233; bem f&#225;cil, n
 ```
 
 
---- type:NormalExercise xp:100 skills:1 key:ca3f7b71504ff93940cf65889d406a58c5b0019c
+---
+
 ## Adicionando mais informações sobre filmes na lista
+
+```yaml
+type: NormalExercise 
+xp: 100 
+skills: 1
+key: ca3f7b71504ff93940cf65889d406a58c5b0019c   
+```
+
 
 Orgulhoso de sua primeira lista, você decide compartilhá-la com os membros do seu clube do filme. Contudo, um dos membros mais antigos, um cara chamado M. McDowell, notou que você esqueceu de adicionar o ano de lançamento. Devido as suas ambições de se tornar o próximo presidente do clube no ano que vem, você decide adicionar essa informação a lista.
 
@@ -374,23 +482,26 @@ Se você quiser dar um nome ao novo item da lista, você simplesmente adiciona o
 ext_list <- c(my_list, my_name = my_val)
 ```
 
-*** =instructions
+
+`@instructions`
 - Complete o código abaixo para que um item chamado `year` seja adicionado a `shining_list` com o valor de 1980. Armazene o resultado em `shining_list_full`.
 - Por fim, dê uma olhada na estrutura de `shining_list_full` com a função [`str()`](http://www.rdocumentation.org/packages/utils/functions/str).
 
-*** =hint
+`@hint`
 Dá uma olhada no código de exemplo da descrição da tarefa. Talvez isso ajude você a começar:
 ```
 shining_list <- c(shining_list, ...)
 ```
 Você ainda tem que adicionar algum código onde os três pontos estão.
 
-*** =pre_exercise_code
+`@pre_exercise_code`
+
 ```{r, eval = FALSE}
 load(url("http://s3.amazonaws.com/assets.datacamp.com/course/intro_to_r/shining_list.RData"))
 ```
 
-*** =sample_code
+
+`@sample_code`
 
 ```{r}
 # shining_list, a lista contendo o nome do filme, atores e análises, já está pré-carregada no workspace
@@ -399,10 +510,10 @@ load(url("http://s3.amazonaws.com/assets.datacamp.com/course/intro_to_r/shining_
 shining_list_full <- 
 
 # Dê uma olhada em shining_list_full
-
 ```
 
-*** =solution
+
+`@solution`
 
 ```{r}
 # shining_list, a lista contendo o nome do filme, atores e análises, já está pré-carregada no workspace
@@ -414,7 +525,9 @@ shining_list_full <- c(shining_list, year = 1980)
 str(shining_list_full)
 ```
 
-*** =sct
+
+`@sct`
+
 ```{r}
 msg = "N&#227;o remova ou altere a defini&#231;&#227;o de `shining_list`, que j&#225; est&#225; pr&#233;-carregado no workspace!"
 test_object("shining_list", undefined_msg = msg, incorrect_msg = msg)
