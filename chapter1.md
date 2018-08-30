@@ -31,7 +31,8 @@ Adicione uma linha em R que calcule 6 + 12, exatamente igual ao código de exemp
 `@pre_exercise_code`
 
 ```{r}
-
+install.packages('dplyr')
+library(dplyr)
 ```
 
 
