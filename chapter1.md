@@ -1,10 +1,18 @@
---- 
-title_meta  : Capítulo 1
-title       : Introdução ao Básico
-description : "Neste capítulo, você dará seus primeiros passos em R. Você aprenderá a usar o console como uma calculadora e a como declarar variáveis. Você também irá aprender os tipos básicos de dados em R. Vamos começar!"
+---
+title_meta: 'Capítulo 1'
+title: 'Introdução ao Básico'
+description: 'Neste capítulo, você dará seus primeiros passos em R. Você aprenderá a usar o console como uma calculadora e a como declarar variáveis. Você também irá aprender os tipos básicos de dados em R. Vamos começar!'
+---
 
---- type:NormalExercise xp:100 skills:1 key:15d729634a
 ## Como funciona a plataforma
+
+```yaml
+type: NormalExercise 
+xp: 100 
+skills: 1
+key: 15d729634a   
+```
+
 
 No editor à direita, você deverá digitar códigos em R para resolver os exercícios. Quando você clicar no botão ‘Submit Answer’, cada linha do código será interpretada e executada em R. Em seguida, você receberá uma mensagem se o seu código está correto ou não. A saída do seu código em R será mostrada no console no canto inferior direito.
 
@@ -12,28 +20,33 @@ R faz uso do sinal de `#` para adicionar comentários, a fim de permitir a você
 
 Você pode também executar comandos em R diretamente no console ao lado. Esta é uma boa forma de experimentar novos códigos em R, já que sua submissão não será corrigida ou validada.
 
-*** =instructions
+
+`@instructions`
 - O editor à direita possui um código de exemplo. Você consegue identificar quais linhas são códigos em R e quais são comentários?
 - Adicione uma linha de código que calcule a soma de 6 + 12, e clique no botão ‘Submit Answer’.
 
-*** =hint
+`@hint`
 Adicione uma linha em R que calcule 6 + 12, exatamente igual ao código de exemplo!
 
-*** =pre_exercise_code
+`@pre_exercise_code`
+
 ```{r}
 # no pec
 ```
 
-*** =sample_code
+
+`@sample_code`
+
 ```{r}
 # Calcule 3 + 4
 3 + 4
 
 # Calcule 6 + 12
-
 ```
 
-*** =solution
+
+`@solution`
+
 ```{r}
 # Calcule 3 + 4
 3 + 4
@@ -42,14 +55,26 @@ Adicione uma linha em R que calcule 6 + 12, exatamente igual ao código de exemp
 6 + 12
 ```
 
-*** =sct
+
+`@sct`
+
 ```{r}
 test_output_contains("18", incorrect_msg = "Tenha certeza que voc&#234; inseriu uma nova linha que some 6 + 12. N&#227;o inicie esta linha com um `#`, sen&#227;o o c&#243;digo n&#227;o ser&#225; executado!")
 success_msg("Parab&#233;ns! Veja como o console mostra o resultado do seu c&#243;digo. Agora, j&#225; que voc&#234; est&#225; familiarizado com a interface do curso, vamos aprender R!")
 ```
 
---- type:NormalExercise xp:100 skills:1 key:720745eda5
+
+---
+
 ## Aritmética com R
+
+```yaml
+type: NormalExercise 
+xp: 100 
+skills: 1
+key: 720745eda5   
+```
+
 
 Em sua forma mais básica, R pode ser usado até mesmo como uma simples calculadora. Para tal, considere os seguintes operadores aritméticos:
 
@@ -66,21 +91,25 @@ Vamos explicar melhor estes dois últimos:
 
 Sabendo disto, siga as instruções abaixo para completar o exercício.
 
-*** =instructions
+
+`@instructions`
 - Digite `2^5` no editor para elevar 2 a 5.
 - Digite `28 %% 6` para calcular o resto da divisão entre 28 e 6.
 - Clique em 'Submit Answer' e confira o resultado do seu código no console.
 - Note como o símbolo de `#` é usado para adicionar comentários aos códigos em R.
 
-*** =hint
+`@hint`
 Outro exemplo com o operador de módulo: `9 %% 2` é igual a `1`.
 
-*** =pre_exercise_code
+`@pre_exercise_code`
+
 ```{r}
 # no pec
 ```
 
-*** =sample_code
+
+`@sample_code`
+
 ```{r}
 # Adição
 5 + 5 
@@ -98,10 +127,11 @@ Outro exemplo com o operador de módulo: `9 %% 2` é igual a `1`.
 
 
 # Módulo
-
 ```
 
-*** =solution
+
+`@solution`
+
 ```{r}
 # Adição
 5 + 5
@@ -122,7 +152,9 @@ Outro exemplo com o operador de módulo: `9 %% 2` é igual a `1`.
 28 %% 6
 ```
 
-*** =sct
+
+`@sct`
+
 ```{r}
 msg = "N&#227;o remova os operadores dos c&#243;digos de exemplo!"
 test_output_contains("2^5", incorrect_msg = "O c&#243;digo de exponencia&#231;&#227;o est&#225; incorreto. Escreva `2 ^ 5` em uma nova linha e tente de novo.")
@@ -131,8 +163,17 @@ success_msg("&#211;timo! Siga em frente para o pr&#243;ximo exerc&#237;cio.")
 ```
 
 
---- type:NormalExercise xp:100 skills:1 key:5f200ffd43
+---
+
 ## Declaração de Variáveis
+
+```yaml
+type: NormalExercise 
+xp: 100 
+skills: 1
+key: 5f200ffd43   
+```
+
 
 Um dos conceitos básicos da programação são as  **variáveis**.
 
@@ -144,18 +185,22 @@ Vamos a um exemplo prático: você pode armazenar o valor 4 em uma variável cha
 my_var <- 4
 ```
 
-*** =instructions
+
+`@instructions`
 Pra você: complete o código no editor armazenando o valor 42 na variável `x`. Em seguida, clique em 'Submit Answer'. Note que, quando você pede para R mostrar o valor de `x`, o valor 42 aparece no console.
 
-*** =hint
+`@hint`
 Reveja como o valor 4 foi armazenado na variável `my_variable` na descrição do exercício. Faça exatamente a mesma coisa no editor, mas agora armazenando o valor 42 dentro da variável `x`.
 
-*** =pre_exercise_code
+`@pre_exercise_code`
+
 ```{r}
 # no pec
 ```
 
-*** =sample_code
+
+`@sample_code`
+
 ```{r}
 # Armazena o valor 42 na variável x
 x <- 
@@ -164,7 +209,9 @@ x <-
 x
 ```
 
-*** =solution
+
+`@solution`
+
 ```{r}
 # Armazena o valor 42 na variável x
 x <- 42
@@ -173,41 +220,58 @@ x <- 42
 x
 ```
 
-*** =sct
+
+`@sct`
+
 ```{r}
 test_object("x", undefined_msg = "Tenha certeza de que voc&#234; declarou corretamente a vari&#225;vel `x`.",
             incorrect_msg = "Tenha certeza de que voc&#234; armazenou o valor correto na vari&#225;vel `x`.") 
 success_msg("Bom trabalho! Voc&#234; percebeu que a linguagem R n&#227;o exibiu no console o c&#243;digo que voc&#234; digitou para declarar a vari&#225;vel? Isso &#233; porque o c&#243;digo `x <- 42` n&#227;o gera nenhuma sa&#237;da (output), uma vez que R acredita que voc&#234; precisar&#225; dessa vari&#225;vel no futuro. Do contr&#225;rio, voc&#234; n&#227;o precisaria armazenar nenhum valor nessa vari&#225;vel, certo?")
 ```
 
---- type:NormalExercise xp:100 skills:1 key:c5944b90eb
+
+---
+
 ## Declaração de Variáveis (2)
+
+```yaml
+type: NormalExercise 
+xp: 100 
+skills: 1
+key: c5944b90eb   
+```
+
 
 Vamos supor que você tem uma cesta de frutas com cinco maçãs. Como um Analista de Dados em treinamento, você quer armazenar o número de maçãs em uma variável com o nome `my_apples`.
 
-*** =instructions
+
+`@instructions`
 - Digite o seguinte código no editor: `my_apples <- 5`. Isso fará com que o número 5 seja armazenado na variável `my_apples`.
 - Digite: `my_apples` abaixo do segundo comentário. Isso fará com que o valor da variável `my_apples` seja exibido no console.
 - Clique em 'Submit Answer' e verifique o console: você verá que o número 5 foi exibido. A partir de agora, R vai associar o nome da variável `my_apples` ao valor 5.
 
-*** =hint
+`@hint`
 Lembre-se que se você quer armazenar um número ou objeto em uma variável em R, você pode fazer uso do operador de armazenamento `<-`. Outra forma de fazer isso é utilizando o sinal de `=`, mas, `<-` é preferido por grande parte da comunidade de R.
 
-*** =pre_exercise_code
+`@pre_exercise_code`
+
 ```{r}
 # no pec
 ```
 
-*** =sample_code
+
+`@sample_code`
+
 ```{r}
 # Crie e armazene o valor 5 na variável my_apples
 
 
 # Exiba o valor da variável my_apples
-
 ```
 
-*** =solution
+
+`@solution`
+
 ```{r}
 # Crie e armazene o valor 5 na variável my_apples
 my_apples <- 5
@@ -216,7 +280,9 @@ my_apples <- 5
 my_apples
 ```
 
-*** =sct
+
+`@sct`
+
 ```{r}
 test_object("my_apples", 
             undefined_msg = "Por favor, verifique se voc&#234; definiu a vari&#225;vel `my_apples`.",
@@ -226,8 +292,17 @@ success_msg("Excelente! Continue para o pr&#243;ximo exerc&#237;cio!")
 ```
 
 
---- type:NormalExercise xp:100 skills:1 key:1c1bd25045
+---
+
 ## Declaração de Variáveis (3)
+
+```yaml
+type: NormalExercise 
+xp: 100 
+skills: 1
+key: 1c1bd25045   
+```
+
 
 Toda boa cesta de frutas precisa de laranjas, então, você decidiu adicionar seis laranjas a ela. Como um Analista de Dados, sua ação é criar imediatamente uma variável chamada `my_oranges` e armazenar nela o valor 6. Em seguida, você quer calcular quantas frutas você tem no total. Uma vez que você possui variáveis que armazenam tais valores, você pode criar um código simples para atender a esta tarefa:
 
@@ -235,20 +310,24 @@ Toda boa cesta de frutas precisa de laranjas, então, você decidiu adicionar se
 my_apples + my_oranges
 ```
 
-*** =instructions
+
+`@instructions`
 - Armazene o valor 6 a variável `my_oranges`.
 - Some as variáveis `my_apples` e `my_oranges`. Em seguida, verifique o resultado no console.
 - Armazene o valor da adição de `my_apples` e `my_oranges` a uma variável chamada `my_fruit`.
 
-*** =hint
+`@hint`
 `my_fruit` nada mais é do que a soma de `my_apples` e `my_oranges`. Você pode usar o operador `+` para somá-los e utilizar `<-` para armazená-lo na variável `my_fruit`.
 
-*** =pre_exercise_code
+`@pre_exercise_code`
+
 ```{r}
 # no pec
 ```
 
-*** =sample_code
+
+`@sample_code`
+
 ```{r}
 # Armazene os devidos valores nas variáveis my_apples e my_oranges
 my_apples <- 5
@@ -258,10 +337,11 @@ my_apples <- 5
 
 
 # Crie a variável my_fruit
-
 ```
 
-*** =solution
+
+`@solution`
+
 ```{r}
 # Armazene os devidos valores nas variáveis my_apples e my_oranges
 my_apples  <- 5
@@ -274,7 +354,9 @@ my_apples + my_oranges
 my_fruit <- my_apples + my_oranges
 ```
 
-*** =sct
+
+`@sct`
+
 ```{r}
 test_object("my_apples", incorrect_msg = "N&#227;o remova a linha de c&#243;digo que armazena 5 a vari&#225;vel `my_apples`.")
 test_object("my_oranges", incorrect_msg = "Mantenha a linha de c&#243;digo que armazena 6 a vari&#225;vel `my_oranges`")
@@ -286,24 +368,37 @@ success_msg("Boa! A grande vantagem de realizar c&#225;lculos entre vari&#225;ve
 ```
 
 
---- type:NormalExercise xp:100 skills:1 key:915fcc7c99
+---
+
 ## Maçãs e Laranjas
+
+```yaml
+type: NormalExercise 
+xp: 100 
+skills: 1
+key: 915fcc7c99   
+```
+
 
 No exercício anterior, números inteiros foram armazenados nas variáveis `my_apples` e `my_oranges`. Em linguagem R, o operador `+` funciona com variáveis numéricas. Se você tivesse armazenado um texto dentro de uma dessas variáveis, como `my_oranges` e tentasse somar os valores destas duas, R entenderia que você está tentando somar um número com um texto no momento da declaração da variável `my_fruit` (veja o exemplo no editor). Não é possível fazer isso.
 
-*** =instructions
+
+`@instructions`
 - Clique no botão 'Submit Answer' e leia a mensagem de erro que surge. Tenha certeza de que entende o porquê disto estar ocorrendo.
 - Ajuste o código para que R entenda que você tem 6 laranjas, e não "seis", fazendo que sua cesta tenha no total 11 frutas.
 
-*** =hint
+`@hint`
 Você precisa armazenar o valor `6` na variável `my_oranges` ao invés do texto `"seis"` . Perceba que as aspas são utilizadas para indicar que `"seis"` são caracteres de texto.
 
-*** =pre_exercise_code
+`@pre_exercise_code`
+
 ```{r}
 # no pec
 ```
 
-*** =sample_code
+
+`@sample_code`
+
 ```{r}
 # Armazene um valor na variável my_apples
 my_apples <- 5 
@@ -316,7 +411,9 @@ my_fruit <- my_apples + my_oranges
 my_fruit
 ```
 
-*** =solution
+
+`@solution`
+
 ```{r}
 # Armazene um valor na variável my_apples
 my_apples <- 5  
@@ -329,7 +426,9 @@ my_fruit <- my_apples + my_oranges
 my_fruit
 ```
 
-*** =sct
+
+`@sct`
+
 ```{r}
 test_error(incorrect_msg = "Voc&#234; consegue resolver esse problema configurando uma vari&#225;vel n&#250;merica em `my_oranges`, e n&#227;o uma string (texto)!")
 test_object("my_apples", incorrect_msg = "Tenha certeza de que o n&#250;mero `5` continua armazenado na vari&#225;vel `my_apples`.")
@@ -340,8 +439,17 @@ success_msg("Incr&#237;vel! Continue o bom trabalho! Prossiga para o pr&#243;xim
 ```
 
 
---- type:NormalExercise xp:100 skills:1 key:0f23107394
+---
+
 ## Tipos básicos de dados em R
+
+```yaml
+type: NormalExercise 
+xp: 100 
+skills: 1
+key: 0f23107394   
+```
+
 
 R funciona com diversos tipos de dados. Para começar, vamos aprender os mais básicos:
 
@@ -352,7 +460,8 @@ R funciona com diversos tipos de dados. Para começar, vamos aprender os mais b�
 
 Perceba como os sinais de aspas no editor fazem com que "algum texto" seja considerado um dado **character**.
 
-*** =instructions
+
+`@instructions`
 Altere o valor da:
 
 - Variável `my_numeric` para `42`.
@@ -361,16 +470,19 @@ Altere o valor da:
 
 Não se esqueça que R é case sensitive, ou seja, diferencia maiúsculas de minúsculas!
 
-*** =hint 
+`@hint`
 Substitua os valores das variáveis no editor pelos valores que foram informados no exercício. Por exemplo:
-`my_numeric <- 42` armazena o valor 42 na variável `my_numeric`. 
+`my_numeric <- 42` armazena o valor 42 na variável `my_numeric`.
 
-*** =pre_exercise_code
+`@pre_exercise_code`
+
 ```{r}
 # no pec
 ```
 
-*** =sample_code
+
+`@sample_code`
+
 ```{r}
 # Altere o valor de my_numeric para 42
 my_numeric <- 42.5
@@ -382,7 +494,9 @@ my_character <- "algum texto"
 my_logical <- TRUE
 ```
 
-*** =solution
+
+`@solution`
+
 ```{r}
 # Altere o valor de my_numeric para 42
 my_numeric <- 42
@@ -394,7 +508,9 @@ my_character <- "universe"
 my_logical <- FALSE
 ```
 
-*** =sct
+
+`@sct`
+
 ```{r}
 test_object("my_numeric", incorrect_msg = "Voc&#234; alterou o valor de `my_numeric` para 42?")
 test_object("my_character", incorrect_msg = "Voc&#234; n&#227;o alterou corretamente o valor de `my_character` para `\"universe\"`. N&#227;o se esque&#231;a das aspas duplas!")
@@ -403,23 +519,36 @@ success_msg("Excelente trabalho! Vamos para o pr&#243;ximo exerc&#237;cio.")
 ```
 
 
---- type:NormalExercise xp:100 skills:1 key:99b549229d
+---
+
 ## Qual o tipo de dado?
+
+```yaml
+type: NormalExercise 
+xp: 100 
+skills: 1
+key: 99b549229d   
+```
+
 
 Você se lembra que quando você adicionou `5 + seis`, você recebeu uma mensagem de erro devido aos diferentes tipos de dados (um era númerico e o outro texto)? Você pode evitar essas situações embaraçosas ao checar de antemão o tipo de dado da variável que você está trabalhando. Você pode fazer isso utilizando a função `class()`, como é mostrado no código ao lado.
 
-*** =instructions
+
+`@instructions`
 Complete o código no editor ao lado e exiba o tipo de dado das variáveis `my_character` e `my_logical` usando a função `class()`.
 
-*** =hint
+`@hint`
 O código que exibe o tipo de dado de `my_numeric` já está incluso. Faça algo similar para as variáveis `my_character` e `my_logical`.
 
-*** =pre_exercise_code
+`@pre_exercise_code`
+
 ```{r}
 # no pec
 ```
 
-*** =sample_code
+
+`@sample_code`
+
 ```{r}
 # Declare variáveis de diferentes tipos
 my_numeric <- 42
@@ -433,10 +562,11 @@ class(my_numeric)
 
 
 # Verifique a classe de my_logical
-
 ```
 
-*** =solution
+
+`@solution`
+
 ```{r}
 # Declare variáveis de diferentes tipos
 my_numeric <- 42
@@ -453,7 +583,9 @@ class(my_character)
 class(my_logical)
 ```
 
-*** =sct
+
+`@sct`
+
 ```{r}
 msg <- "N&#227;o remova a declara&#231;&#227;o das vari&#225;veis!"
 lapply(c("my_numeric", "my_character", "my_logical"), test_object, undefined_msg = msg, incorrect_msg = msg)
