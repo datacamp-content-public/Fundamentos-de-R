@@ -3,7 +3,7 @@ title: 'Template Chapter 1'
 description: 'This is a template chapter.'
 ---
 
-## An exercise title written in sentence case
+## Como fazer este curso
 
 ```yaml
 type: NormalExercise 
@@ -14,10 +14,9 @@ key: 9f723bb0b0
 ```
 
 
-# Como funciona a plataforma
-No editor à direita, você deverá digitar códigos em R para resolver os exercícios. Quando você clicar no botão ‘Submit Answer’, cada linha do código será interpretada e executada em R. Em seguida, você receberá uma mensagem se o seu código está correto ou não. A saída do seu código em R será mostrada no console no canto inferior direito.
+No editor à direita, você deverá digitar códigos em R para resolver os exercícios. Quando você clicar no botão amarelo "Submit Answer", cada linha do código será interpretada e executada pelo R. Em seguida, você receberá uma mensagem se o seu código está correto ou não. A saída do seu código em R será mostrada no console no canto inferior direito.
 
-R faz uso do sinal de `#` para adicionar comentários, a fim de permitir a você e outras pessoas entenderem o funcionamento do seu código. Igual no Twitter! Comentários não são executados como um código em R, então eles não irão influenciar no seu resultado. Por exemplo, no editor à direita, `Calcule 3 + 4` é um comentário.
+R faz uso do sinal de `#` para adicionar comentários, a fim de permitir a você e outras pessoas entenderem o funcionamento do seu código. Igual no Twitter! Comentários não são executados como um código em R, então eles não irão influenciar no seu resultado. Por exemplo, no editor à direita, `# Calcule 3 + 4` é um comentário.
 
 Você pode também executar comandos em R diretamente no console ao lado. Esta é uma boa forma de experimentar novos códigos em R, já que sua submissão não será corrigida ou validada.
 
@@ -61,8 +60,8 @@ Adicione uma linha em R que calcule 6 + 12, exatamente igual ao código de exemp
 `@sct`
 
 ```{r}
-test_output_contains("18", incorrect_msg = "Tenha certeza que você voc&#234; inseriu uma nova linha que some 6 + 12. N&#227;o inicie esta linha com um `#`, sen&#227;o o c&#243;digo n&#227;o ser&#225; executado!")
-success_msg("Parab&#233;ns! Veja como o console mostra o resultado do seu c&#243;digo. Agora, j&#225; que voc&#234; est&#225; familiarizado com a interface do curso, vamos aprender R!")
+test_output_contains("6 + 12", incorrect_msg = "Tenha certeza que você inseriu uma nova linha que some 6 + 12. Não inicie esta linha com um `#`, senão o código não será executado!")
+success_msg("Parabéns! Veja como o console mostra você o resultado do seu código. Agora, já que você está familiarizado com a interface do curso, vamos aprender R!")
 ```
 
 
