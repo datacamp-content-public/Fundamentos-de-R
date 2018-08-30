@@ -1,52 +1,39 @@
----
-title: 'Template Chapter 1'
-description: 'This is a template chapter.'
----
+--- 
+title_meta  : Capítulo 1
+title       : Introdução ao Básico
+description : "Neste capítulo, você dará seus primeiros passos em R. Você aprenderá a usar o console como uma calculadora e a como declarar variáveis. Você também irá aprender os tipos básicos de dados em R. Vamos começar!"
 
-## Como fazer este curso
+--- type:NormalExercise xp:100 skills:1 key:15d729634a
+## Como funciona a plataforma
 
-```yaml
-type: NormalExercise 
-lang: r
-xp: 100 
-skills: 1
-key: 9f723bb0b0   
-```
+No editor à direita, você deverá digitar códigos em R para resolver os exercícios. Quando você clicar no botão ‘Submit Answer’, cada linha do código será interpretada e executada em R. Em seguida, você receberá uma mensagem se o seu código está correto ou não. A saída do seu código em R será mostrada no console no canto inferior direito.
 
-
-No editor à direita, você deverá digitar códigos em R para resolver os exercícios. Quando você clicar no botão amarelo "Submit Answer", cada linha do código será interpretada e executada pelo R. Em seguida, você receberá uma mensagem se o seu código está correto ou não. A saída do seu código em R será mostrada no console no canto inferior direito.
-
-R faz uso do sinal de `#` para adicionar comentários, a fim de permitir a você e outras pessoas entenderem o funcionamento do seu código. Igual no Twitter! Comentários não são executados como um código em R, então eles não irão influenciar no seu resultado. Por exemplo, no editor à direita, `# Calcule 3 + 4` é um comentário.
+R faz uso do sinal de `#` para adicionar comentários, a fim de permitir a você e outras pessoas entenderem o funcionamento do seu código. Igual no Twitter! Comentários não são executados como um código em R, então eles não irão influenciar no seu resultado. Por exemplo, no editor à direita, `Calcule 3 + 4` é um comentário.
 
 Você pode também executar comandos em R diretamente no console ao lado. Esta é uma boa forma de experimentar novos códigos em R, já que sua submissão não será corrigida ou validada.
 
-
-`@instructions`
+*** =instructions
 - O editor à direita possui um código de exemplo. Você consegue identificar quais linhas são códigos em R e quais são comentários?
 - Adicione uma linha de código que calcule a soma de 6 + 12, e clique no botão ‘Submit Answer’.
 
-`@hint`
+*** =hint
 Adicione uma linha em R que calcule 6 + 12, exatamente igual ao código de exemplo!
 
-`@pre_exercise_code`
-
+*** =pre_exercise_code
 ```{r}
-
+# no pec
 ```
 
-
-`@sample_code`
-
+*** =sample_code
 ```{r}
 # Calcule 3 + 4
 3 + 4
 
 # Calcule 6 + 12
+
 ```
 
-
-`@solution`
-
+*** =solution
 ```{r}
 # Calcule 3 + 4
 3 + 4
@@ -55,62 +42,429 @@ Adicione uma linha em R que calcule 6 + 12, exatamente igual ao código de exemp
 6 + 12
 ```
 
-
-`@sct`
-
+*** =sct
 ```{r}
-test_output_contains("18", incorrect_msg = "Tenha certeza que você inseriu uma nova linha que some 6 + 12. Não inicie esta linha com um `#`, senão o código não será executado!")
-success_msg("Parabéns! Veja como o console mostra você o resultado do seu código. Agora, já que você está familiarizado com a interface do curso, vamos aprender R!")
+test_output_contains("18", incorrect_msg = "Tenha certeza que voc&#234; inseriu uma nova linha que some 6 + 12. N&#227;o inicie esta linha com um `#`, sen&#227;o o c&#243;digo n&#227;o ser&#225; executado!")
+success_msg("Parab&#233;ns! Veja como o console mostra o resultado do seu c&#243;digo. Agora, j&#225; que voc&#234; est&#225; familiarizado com a interface do curso, vamos aprender R!")
+```
+
+--- type:NormalExercise xp:100 skills:1 key:720745eda5
+## Aritmética com R
+
+Em sua forma mais básica, R pode ser usado até mesmo como uma simples calculadora. Para tal, considere os seguintes operadores aritméticos:
+
+- Adição: `+`
+- Subtração: `-`
+- Multiplicação: `*`
+- Divisão: `/`
+- Exponenciação: `^`
+- Módulo: `%%`
+
+Vamos explicar melhor estes dois últimos:
+- O operador `^` eleva o número da esquerda ao número que está a sua direita. Por exemplo: `3^2` é o mesmo que 3 elevado a 2, cujo o resultado é 9.
+- O Módulo (`%%`) retornará o resto da divisão entre o número da esquerda e o número da direita. Por exemplo: o resto da divisão entre 5 e 3, ou seja, `5 %% 3` será 2.
+
+Sabendo disto, siga as instruções abaixo para completar o exercício.
+
+*** =instructions
+- Digite `2^5` no editor para elevar 2 a 5.
+- Digite `28 %% 6` para calcular o resto da divisão entre 28 e 6.
+- Clique em 'Submit Answer' e confira o resultado do seu código no console.
+- Note como o símbolo de `#` é usado para adicionar comentários aos códigos em R.
+
+*** =hint
+Outro exemplo com o operador de módulo: `9 %% 2` é igual a `1`.
+
+*** =pre_exercise_code
+```{r}
+# no pec
+```
+
+*** =sample_code
+```{r}
+# Adição
+5 + 5 
+
+# Subtração
+5 - 5 
+
+# Multiplicação
+3 * 5
+
+# Divisão
+(5 + 5) / 2 
+
+# Exponenciação
+
+
+# Módulo
+
+```
+
+*** =solution
+```{r}
+# Adição
+5 + 5
+
+# Subtração
+5 - 5 
+
+# Multiplicação
+3 * 5
+
+ # Divisão
+(5 + 5) / 2 
+
+# Exponenciação
+2 ^ 5
+
+# Módulo
+28 %% 6
+```
+
+*** =sct
+```{r}
+msg = "N&#227;o remova os operadores dos c&#243;digos de exemplo!"
+test_output_contains("2^5", incorrect_msg = "O c&#243;digo de exponencia&#231;&#227;o est&#225; incorreto. Escreva `2 ^ 5` em uma nova linha e tente de novo.")
+test_output_contains("28 %% 6", incorrect_msg = "Parece que h&#225; um problema com seu c&#243;digo de m&#243;dulo. Escreva `28 %% 6` em uma nova linha e tente novamente.")
+success_msg("&#211;timo! Siga em frente para o pr&#243;ximo exerc&#237;cio.")
 ```
 
 
----
+--- type:NormalExercise xp:100 skills:1 key:5f200ffd43
+## Declaração de Variáveis
 
-## <<<New Exercise>>>
+Um dos conceitos básicos da programação são as  **variáveis**.
 
-```yaml
-type: NormalExercise 
-lang: r
-xp: 100 
-skills: 1
-key: ea55f984b3   
+Na linguagem de programação R, uma variável permite que você armazene um valor (por exemplo, o número 4) ou um objeto (como uma função). Você pode mais tarde utilizar o nome desta variável para facilmente acessar o valor ou objeto que ela está armazenando.
+
+Vamos a um exemplo prático: você pode armazenar o valor 4 em uma variável chamada `my_var`usando o comando
+
+```
+my_var <- 4
+```
+
+*** =instructions
+Pra você: complete o código no editor armazenando o valor 42 na variável `x`. Em seguida, clique em 'Submit Answer'. Note que, quando você pede para R mostrar o valor de `x`, o valor 42 aparece no console.
+
+*** =hint
+Reveja como o valor 4 foi armazenado na variável `my_variable` na descrição do exercício. Faça exatamente a mesma coisa no editor, mas agora armazenando o valor 42 dentro da variável `x`.
+
+*** =pre_exercise_code
+```{r}
+# no pec
+```
+
+*** =sample_code
+```{r}
+# Armazena o valor 42 na variável x
+x <- 
+
+# Exibe o valor da variável x
+x
+```
+
+*** =solution
+```{r}
+# Armazena o valor 42 na variável x
+x <- 42
+
+# Exibe o valor da variável x
+x
+```
+
+*** =sct
+```{r}
+test_object("x", undefined_msg = "Tenha certeza de que voc&#234; declarou corretamente a vari&#225;vel `x`.",
+            incorrect_msg = "Tenha certeza de que voc&#234; armazenou o valor correto na vari&#225;vel `x`.") 
+success_msg("Bom trabalho! Voc&#234; percebeu que a linguagem R n&#227;o exibiu no console o c&#243;digo que voc&#234; digitou para declarar a vari&#225;vel? Isso &#233; porque o c&#243;digo `x <- 42` n&#227;o gera nenhuma sa&#237;da (output), uma vez que R acredita que voc&#234; precisar&#225; dessa vari&#225;vel no futuro. Do contr&#225;rio, voc&#234; n&#227;o precisaria armazenar nenhum valor nessa vari&#225;vel, certo?")
+```
+
+--- type:NormalExercise xp:100 skills:1 key:c5944b90eb
+## Declaração de Variáveis (2)
+
+Vamos supor que você tem uma cesta de frutas com cinco maçãs. Como um Analista de Dados em treinamento, você quer armazenar o número de maçãs em uma variável com o nome `my_apples`.
+
+*** =instructions
+- Digite o seguinte código no editor: `my_apples <- 5`. Isso fará com que o número 5 seja armazenado na variável `my_apples`.
+- Digite: `my_apples` abaixo do segundo comentário. Isso fará com que o valor da variável `my_apples` seja exibido no console.
+- Clique em 'Submit Answer' e verifique o console: você verá que o número 5 foi exibido. A partir de agora, R vai associar o nome da variável `my_apples` ao valor 5.
+
+*** =hint
+Lembre-se que se você quer armazenar um número ou objeto em uma variável em R, você pode fazer uso do operador de armazenamento `<-`. Outra forma de fazer isso é utilizando o sinal de `=`, mas, `<-` é preferido por grande parte da comunidade de R.
+
+*** =pre_exercise_code
+```{r}
+# no pec
+```
+
+*** =sample_code
+```{r}
+# Crie e armazene o valor 5 na variável my_apples
+
+
+# Exiba o valor da variável my_apples
+
+```
+
+*** =solution
+```{r}
+# Crie e armazene o valor 5 na variável my_apples
+my_apples <- 5
+
+# Exiba o valor da variável my_apples
+my_apples
+```
+
+*** =sct
+```{r}
+test_object("my_apples", 
+            undefined_msg = "Por favor, verifique se voc&#234; definiu a vari&#225;vel `my_apples`.",
+            incorrect_msg = "Tenha certeza de que voc&#234; armazenou o valor correto na vari&#225;vel `my_apples`.")
+test_output_contains("my_apples", incorrect_msg = "Voc&#234; digitou o c&#243;digo para exibir o valor da vari&#225;vel `my_apples` no console?")
+success_msg("Excelente! Continue para o pr&#243;ximo exerc&#237;cio!")
 ```
 
 
+--- type:NormalExercise xp:100 skills:1 key:1c1bd25045
+## Declaração de Variáveis (3)
 
+Toda boa cesta de frutas precisa de laranjas, então, você decidiu adicionar seis laranjas a ela. Como um Analista de Dados, sua ação é criar imediatamente uma variável chamada `my_oranges` e armazenar nela o valor 6. Em seguida, você quer calcular quantas frutas você tem no total. Uma vez que você possui variáveis que armazenam tais valores, você pode criar um código simples para atender a esta tarefa:
 
+```
+my_apples + my_oranges
+```
 
-`@instructions`
+*** =instructions
+- Armazene o valor 6 a variável `my_oranges`.
+- Some as variáveis `my_apples` e `my_oranges`. Em seguida, verifique o resultado no console.
+- Armazene o valor da adição de `my_apples` e `my_oranges` a uma variável chamada `my_fruit`.
 
+*** =hint
+`my_fruit` nada mais é do que a soma de `my_apples` e `my_oranges`. Você pode usar o operador `+` para somá-los e utilizar `<-` para armazená-lo na variável `my_fruit`.
 
-`@hint`
-
-
-`@pre_exercise_code`
-
+*** =pre_exercise_code
 ```{r}
+# no pec
+```
+
+*** =sample_code
+```{r}
+# Armazene os devidos valores nas variáveis my_apples e my_oranges
+my_apples <- 5
+
+
+# Some as duas variáveis
+
+
+# Crie a variável my_fruit
 
 ```
 
-
-`@sample_code`
-
+*** =solution
 ```{r}
+# Armazene os devidos valores nas variáveis my_apples e my_oranges
+my_apples  <- 5
+my_oranges <- 6
 
+# Some as duas variáveis
+my_apples + my_oranges
+
+# Crie a variável my_fruit
+my_fruit <- my_apples + my_oranges
+```
+
+*** =sct
+```{r}
+test_object("my_apples", incorrect_msg = "N&#227;o remova a linha de c&#243;digo que armazena 5 a vari&#225;vel `my_apples`.")
+test_object("my_oranges", incorrect_msg = "Mantenha a linha de c&#243;digo que armazena 6 a vari&#225;vel `my_oranges`")
+test_output_contains("my_apples + my_oranges",
+                     incorrect_msg = "Tenha certeza de exibir o valor da adi&#231;&#227;o de `my_apples` e `my_oranges`. O c&#243;digo de exemplo na descri&#231;&#227;o do exerc&#237;cio possui a resposta para essa instru&#231;&#227;o!")
+msg <- "Voc&#234; usou `my_fruit <- my_apples + my_oranges` para criar a vari&#225;vel `my_fruit`?"
+test_object("my_fruit", undefined_msg = msg, incorrect_msg = msg)
+success_msg("Boa! A grande vantagem de realizar c&#225;lculos entre vari&#225;veis &#233; a reutiliza&#231;&#227;o de c&#243;digo. Se voc&#234; simplesmente mudar o valor de `my_apples` de 5 para 12 e rodar novamente o c&#243;digo, `my_fruit` ser&#225; atualizada automaticamente. Siga em frente para o pr&#243;ximo exerc&#237;cio!")
 ```
 
 
-`@solution`
+--- type:NormalExercise xp:100 skills:1 key:915fcc7c99
+## Maçãs e Laranjas
 
+No exercício anterior, números inteiros foram armazenados nas variáveis `my_apples` e `my_oranges`. Em linguagem R, o operador `+` funciona com variáveis numéricas. Se você tivesse armazenado um texto dentro de uma dessas variáveis, como `my_oranges` e tentasse somar os valores destas duas, R entenderia que você está tentando somar um número com um texto no momento da declaração da variável `my_fruit` (veja o exemplo no editor). Não é possível fazer isso.
+
+*** =instructions
+- Clique no botão 'Submit Answer' e leia a mensagem de erro que surge. Tenha certeza de que entende o porquê disto estar ocorrendo.
+- Ajuste o código para que R entenda que você tem 6 laranjas, e não "seis", fazendo que sua cesta tenha no total 11 frutas.
+
+*** =hint
+Você precisa armazenar o valor `6` na variável `my_oranges` ao invés do texto `"seis"` . Perceba que as aspas são utilizadas para indicar que `"seis"` são caracteres de texto.
+
+*** =pre_exercise_code
 ```{r}
+# no pec
+```
 
+*** =sample_code
+```{r}
+# Armazene um valor na variável my_apples
+my_apples <- 5 
+
+# Corrija o valor armazenado em my_oranges
+my_oranges <- "seis" 
+
+# Crie a variável my_fruit e exiba-a no console
+my_fruit <- my_apples + my_oranges 
+my_fruit
+```
+
+*** =solution
+```{r}
+# Armazene um valor na variável my_apples
+my_apples <- 5  
+
+# Corrija o valor armazenado em my_oranges
+my_oranges <- 6
+
+# Crie a variável my_fruit e exiba-a no console
+my_fruit <- my_apples + my_oranges 
+my_fruit
+```
+
+*** =sct
+```{r}
+test_error(incorrect_msg = "Voc&#234; consegue resolver esse problema configurando uma vari&#225;vel n&#250;merica em `my_oranges`, e n&#227;o uma string (texto)!")
+test_object("my_apples", incorrect_msg = "Tenha certeza de que o n&#250;mero `5` continua armazenado na vari&#225;vel `my_apples`.")
+test_object("my_oranges", incorrect_msg = "Certifique-se que `my_oranges` &#233; igual a `6`.")
+test_object("my_fruit", incorrect_msg = "O valor de `my_fruit` n&#227;o est&#225; correto. Ela deveria ser `11`, uma vez que &#233; a soma das vari&#225;veis `my_apples` e `my_oranges`.")
+test_output_contains("my_fruit", incorrect_msg = "N&#227;o remova a linha que exibe a vari&#225;vel `my_fruit`.")
+success_msg("Incr&#237;vel! Continue o bom trabalho! Prossiga para o pr&#243;ximo exerc&#237;cio.")
 ```
 
 
-`@sct`
+--- type:NormalExercise xp:100 skills:1 key:0f23107394
+## Tipos básicos de dados em R
 
+R funciona com diversos tipos de dados. Para começar, vamos aprender os mais básicos:
+
+- Números decimais como `4.5` são chamados de **numerics**.
+- Números inteiros como `4` são conhecidos como **integers**, mas estes também são númericos (numerics).
+- Valores Booleanos, por exemplo, `TRUE` (Verdadeiro) ou `FALSE` (Falso) são chamados de **logical**.
+- Textos, também conhecidos como string, possuem o nome **characters**.
+
+Perceba como os sinais de aspas no editor fazem com que "algum texto" seja considerado um dado **character**.
+
+*** =instructions
+Altere o valor da:
+
+- Variável `my_numeric` para `42`.
+- Variável `my_character` para `"universe"`.  Note que as aspas indicam que `"universe"` é um character.
+- Variável `my_logical` para o valor `FALSE`.
+
+Não se esqueça que R é case sensitive, ou seja, diferencia maiúsculas de minúsculas!
+
+*** =hint 
+Substitua os valores das variáveis no editor pelos valores que foram informados no exercício. Por exemplo:
+`my_numeric <- 42` armazena o valor 42 na variável `my_numeric`. 
+
+*** =pre_exercise_code
 ```{r}
+# no pec
+```
 
+*** =sample_code
+```{r}
+# Altere o valor de my_numeric para 42
+my_numeric <- 42.5
+
+# Altere o valor de my_character para "universe"
+my_character <- "algum texto"
+
+# Altere o valor de my_logical para FALSE
+my_logical <- TRUE
+```
+
+*** =solution
+```{r}
+# Altere o valor de my_numeric para 42
+my_numeric <- 42
+
+# Altere o valor de my_character para "universe"
+my_character <- "universe"
+
+# Altere o valor de my_logical para FALSE
+my_logical <- FALSE
+```
+
+*** =sct
+```{r}
+test_object("my_numeric", incorrect_msg = "Voc&#234; alterou o valor de `my_numeric` para 42?")
+test_object("my_character", incorrect_msg = "Voc&#234; n&#227;o alterou corretamente o valor de `my_character` para `\"universe\"`. N&#227;o se esque&#231;a das aspas duplas!")
+test_object("my_logical", incorrect_msg = "Voc&#234; alterou o valor de `my_logical` para `FALSE`? Todas as letras de `FALSE` precisam estar em mai&#250;sculas. N&#227;o se esque&#231;a!")
+success_msg("Excelente trabalho! Vamos para o pr&#243;ximo exerc&#237;cio.")
+```
+
+
+--- type:NormalExercise xp:100 skills:1 key:99b549229d
+## Qual o tipo de dado?
+
+Você se lembra que quando você adicionou `5 + seis`, você recebeu uma mensagem de erro devido aos diferentes tipos de dados (um era númerico e o outro texto)? Você pode evitar essas situações embaraçosas ao checar de antemão o tipo de dado da variável que você está trabalhando. Você pode fazer isso utilizando a função `class()`, como é mostrado no código ao lado.
+
+*** =instructions
+Complete o código no editor ao lado e exiba o tipo de dado das variáveis `my_character` e `my_logical` usando a função `class()`.
+
+*** =hint
+O código que exibe o tipo de dado de `my_numeric` já está incluso. Faça algo similar para as variáveis `my_character` e `my_logical`.
+
+*** =pre_exercise_code
+```{r}
+# no pec
+```
+
+*** =sample_code
+```{r}
+# Declare variáveis de diferentes tipos
+my_numeric <- 42
+my_character <- "universe"
+my_logical <- FALSE 
+
+# Verifique a classe de my_numeric
+class(my_numeric)
+
+# Verifique a classe da variável my_character
+
+
+# Verifique a classe de my_logical
+
+```
+
+*** =solution
+```{r}
+# Declare variáveis de diferentes tipos
+my_numeric <- 42
+my_character <- "universe"
+my_logical <- FALSE
+
+# Verifique a classe de my_numeric
+class(my_numeric)
+
+# Verifique a classe da variável my_character
+class(my_character)
+
+# Verifique a classe de my_logical
+class(my_logical)
+```
+
+*** =sct
+```{r}
+msg <- "N&#227;o remova a declara&#231;&#227;o das vari&#225;veis!"
+lapply(c("my_numeric", "my_character", "my_logical"), test_object, undefined_msg = msg, incorrect_msg = msg)
+patt <- "Voc&#234; incluiu `class(%1$s)` no c&#243;digo para exibir a classe de `%1$s`?"
+test_output_contains("class(my_numeric)",
+                     incorrect_msg = "N&#227;o remova o c&#243;digo que exibe o tipo de dado de `my_numeric`.")
+test_output_contains("class(my_character)",
+                     incorrect_msg = sprintf(patt, "my_character"))
+test_output_contains("class(my_logical)",
+                     incorrect_msg = sprintf(patt, "my_logical"))
+success_msg("Parab&#233;ns. Este foi nosso &#250;ltimo exerc&#237;cio deste cap&#237;tulo! Prossiga para o pr&#243;ximo cap&#237;tulo para entrarmos de cabe&#231;a no mundo dos vetores!")
 ```
 
 
