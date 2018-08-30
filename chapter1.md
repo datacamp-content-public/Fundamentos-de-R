@@ -14,59 +14,55 @@ key: 9f723bb0b0
 ```
 
 
-This is the assignment text. It should help provide students with the background information needed.
-The instructions that follow should be in bullet point form with clear guidance for what is expected.
+# Como funciona a plataforma
+No editor à direita, você deverá digitar códigos em R para resolver os exercícios. Quando você clicar no botão ‘Submit Answer’, cada linha do código será interpretada e executada em R. Em seguida, você receberá uma mensagem se o seu código está correto ou não. A saída do seu código em R será mostrada no console no canto inferior direito.
+
+R faz uso do sinal de `#` para adicionar comentários, a fim de permitir a você e outras pessoas entenderem o funcionamento do seu código. Igual no Twitter! Comentários não são executados como um código em R, então eles não irão influenciar no seu resultado. Por exemplo, no editor à direita, `Calcule 3 + 4` é um comentário.
+
+Você pode também executar comandos em R diretamente no console ao lado. Esta é uma boa forma de experimentar novos códigos em R, já que sua submissão não será corrigida ou validada.
 
 
 `@instructions`
-- Instruction 1
-- Instruction 2
-- Instruction 3
-- Instruction 4
+- O editor à direita possui um código de exemplo. Você consegue identificar quais linhas são códigos em R e quais são comentários?
+- Adicione uma linha de código que calcule a soma de 6 + 12, e clique no botão ‘Submit Answer’.
 
 `@hint`
-- Here is the hint for this setup problem. 
-- It should get students 50% of the way to the correct answer.
-- So don't provide the answer, but don't just reiterate the instructions.
-- Typically one hint per instruction is a sensible amount.
+Adicione uma linha em R que calcule 6 + 12, exatamente igual ao código de exemplo!
 
 `@pre_exercise_code`
 
 ```{r}
-# Load datasets and packages here.
+
 ```
 
 
 `@sample_code`
 
 ```{r}
-# Your
-# sample
-# code
-# should
-# be
-# ideally
-# 10 lines or less,
-# with a max
-# of 16 lines.
+# Calcule 3 + 4
+3 + 4
+
+# Calcule 6 + 12
+
 ```
 
 
 `@solution`
 
 ```{r}
-# Answer goes here
-# Make sure to match the comments with your sample code
-# to help students see the differences from solution
-# to given.
+# Calcule 3 + 4
+3 + 4
+
+# Calcule 6 + 12
+6 + 12
 ```
 
 
 `@sct`
 
 ```{r}
-# Update this to something more informative.
-success_msg("Some praise! Then reinforce a learning objective from the exercise.")
+test_output_contains("18", incorrect_msg = "Tenha certeza que você voc&#234; inseriu uma nova linha que some 6 + 12. N&#227;o inicie esta linha com um `#`, sen&#227;o o c&#243;digo n&#227;o ser&#225; executado!")
+success_msg("Parab&#233;ns! Veja como o console mostra o resultado do seu c&#243;digo. Agora, j&#225; que voc&#234; est&#225; familiarizado com a interface do curso, vamos aprender R!")
 ```
 
 
