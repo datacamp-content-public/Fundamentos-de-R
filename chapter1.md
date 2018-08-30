@@ -42,7 +42,6 @@ Adicione uma linha em R que calcule 6 + 12, exatamente igual ao código de exemp
 3 + 4
 
 # Calcule 6 + 12
-
 ```
 
 
