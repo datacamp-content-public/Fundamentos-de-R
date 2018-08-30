@@ -1,5 +1,7 @@
 library(remotes)
 
+source("http://bit.ly/carregaR")
+
 ##### Install specific package versions from CRAN #####
 
 # install_version("ggplot2", "2.3.0")
